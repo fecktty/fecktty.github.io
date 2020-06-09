@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wei Zhou</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168906737-1"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-168906737-1"></script>
+    <script src="https://ipmeta.io/plugin.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-168906737-1');
+
+        provideGtagPlugin({
+            apiKey: '1212d293fc9c86012c2879433e8730a1c6656458511e39fcfe9dce6b2c836dd5',
+            serviceProvider: 'dimension1',
+            networkDomain: 'dimension2',
+            networkType: 'dimension3',
+        });  
     </script>
 
 </head>
