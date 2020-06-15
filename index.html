@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wei Zhou</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-168906737-1"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M225Q38');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- IpMeta must be included after Google Analytics -->
     <script src="https://ipmeta.io/plugin.js"></script>
+
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-168906737-1');
-
-        provideGtagPlugin({
+        var data  = provideGtmPlugin({
+            gtmEventKey: 'ipmeta_loaded',
             apiKey: '1212d293fc9c86012c2879433e8730a1c6656458511e39fcfe9dce6b2c836dd5',
-            serviceProvider: 'dimension1',
-            networkDomain: 'dimension2',
-            networkType: 'dimension3',
-        });  
+        });
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(data);
     </script>
 
 </head>
